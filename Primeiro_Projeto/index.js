@@ -1,6 +1,6 @@
-const chalk = require('chalk');
+//const chalk = require('chalk');
 
-console.log(chal  k.blue('vamos começar!'));
+console.log(chalk.blue('vamos começar!'));
 
 const paragrafo = 'Texto retornado por uma função';
 
