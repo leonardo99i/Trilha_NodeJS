@@ -1,5 +1,7 @@
-const chalk = require('chalk');
-const fs = require('fs');
+import chalk from 'chalk';
+import fs from 'fs';
+const fs = require('chalk')
+//const fs = require('fs');
 
 function pegaArquivo(caminhoDoArquivo){
     const encoding = 'utf-8';

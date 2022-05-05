@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/leonardo99i/Trilha_NodeJS#readme",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2",
     "node": "^17.7.2"
   },
-  "devDependencies": {},
-  "description": ""
+  "description": "",
+  "type": "module"
 }
