@@ -1,0 +1,20 @@
+{
+  "name": "trilha_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardo99i/Trilha_NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardo99i/Trilha_NodeJS/issues"
+  },
+  "homepage": "https://github.com/leonardo99i/Trilha_NodeJS#readme"
+}
