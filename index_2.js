@@ -20,5 +20,4 @@ function pegaArquivo(caminhoDoArquivo){
         console.log(chalk.green(texto));
     });
 }
-
 pegaArquivo('./arquivos/texto-1.md');
