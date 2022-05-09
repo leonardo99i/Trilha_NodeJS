@@ -6,6 +6,18 @@ function trataErro(erro){
     throw new Error(chalk.red(erro.code, 'Não há arquivo no diretorio.'));//Mensagem de Erro opcional apenas para saber onde o erro foi encontrado em Portugues
 }
 
+//Escrevemos o código de forma sincrona, mas o JS vai interpretar com assinscrona.
+async function pegaArquivo(caminhoDoArquivo){
+    const encoding = 'utf-8';
+    try{
+        const texto =await fs.promises.readFile(caminhoDoArquivo, encoding);
+        console.log(chalk.green(texto));
+    }catch(erro){
+        trataErro(erro);
+    }
+}
+
+/*
 function pegaArquivo(caminhoDoArquivo){
     const encoding = 'utf-8';
     fs.promises
@@ -13,6 +25,7 @@ function pegaArquivo(caminhoDoArquivo){
     .then((texto) => console.log(chalk.green(texto)))//metodo callback, o then recebe o produto da promessa, o conteudo do arquivo no caso
     .catch((erro) => trataErro(erro))
 }
+*/
 /*
 function pegaArquivo(caminhoDoArquivo){
     const encoding = 'utf-8';
