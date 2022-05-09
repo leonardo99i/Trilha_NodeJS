@@ -8,6 +8,14 @@ function trataErro(erro){
 
 function pegaArquivo(caminhoDoArquivo){
     const encoding = 'utf-8';
+    fs.promises
+    .readFile(caminhoDoArquivo, encoding)
+    .then((texto) => console.log(chalk.green(texto)))//metodo callback, o then recebe o produto da promessa, o conteudo do arquivo no caso
+    .catch((erro) => trataErro(erro))
+}
+/*
+function pegaArquivo(caminhoDoArquivo){
+    const encoding = 'utf-8';
     fs.readFile(caminhoDoArquivo, encoding, (erro, texto) => {
         if(erro){
             trataErro(erro);
@@ -19,5 +27,5 @@ function pegaArquivo(caminhoDoArquivo){
         }
         console.log(chalk.green(texto));
     });
-}
+}*/
 pegaArquivo('./arquivos/texto-1.md');
