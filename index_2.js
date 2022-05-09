@@ -6,7 +6,7 @@ function trataErro(erro){
     throw new Error(chalk.red(erro.code, 'Não há arquivo no diretorio.'));//Mensagem de Erro opcional apenas para saber onde o erro foi encontrado em Portugues
 }
 
-//Escrevemos o código de forma sincrona, mas o JS vai interpretar com assinscrona.
+//Escrevemos o código de forma sincrona, mas o JS vai executar de forma assinscrona.
 async function pegaArquivo(caminhoDoArquivo){
     const encoding = 'utf-8';
     try{
