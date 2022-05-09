@@ -16,7 +16,7 @@ async function pegaArquivo(caminhoDoArquivo){
         trataErro(erro);
     }finally{
         console.log(chalk.yellow('Operação concluída'));
-    }
+    }//a mensagem operação concluída vai ser exibida no console em ambos os casos.
 }
 
 /*
